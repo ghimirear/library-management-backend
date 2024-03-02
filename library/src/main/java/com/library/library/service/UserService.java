@@ -43,7 +43,7 @@ public class UserService {
                 return ResponseEntity.ok(loginResult);
             } else { loginResult.setErrorMessage("password did not matched");}
         } else {
-            loginResult.setErrorMessage("user does not exist");
+            loginResult.setErrorMessage("user does not exist.");
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(loginResult);
 
