@@ -41,7 +41,7 @@ public class UserService {
                 existingUser.get().setPassword(null);
                 loginResult.setUser(existingUser.get());
                 return ResponseEntity.ok(loginResult);
-            } else { loginResult.setErrorMessage("password did not matched");}
+            } else { loginResult.setErrorMessage("password did not matched.");}
         } else {
             loginResult.setErrorMessage("user does not exist.");
         }
